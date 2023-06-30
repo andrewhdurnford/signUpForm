@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script defer src="myscripts.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flexbox">
+      <box class="box1">
+        <div class="bgarea">
+          <div class="img">
+            <img
+              src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+              alt="ODIN logo"
+            />
+          </div>
+          <div class="text">ODIN</div>
+        </div>
+        <div class="cite">
+          Photo by
+          <a href="https://unsplash.com/@nahilnaseer">Nahil Naseer</a> on
+          <a href="https://unsplash.com/photos/xljtGZ2-P3Y">Unsplash</a>
+        </div>
+      </box>
+      <box class="box2">
+        <div class="randomtext">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />Sign
+          up now to get started. <br /><br />
+          You know you want to. <br /><br />
+          Let's do this!
+        </div>
+        <div class="form">
+          <div class="row">
+            <div class="unit">
+              <label for="first_name">First Name</label
+              ><input type="text" placeholder=" John" />
+            </div>
+            <div class="unit">
+              <label for="last_name">Last Name</label
+              ><input type="text" placeholder=" Doe" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="unit">
+              <label for="email">Email</label
+              ><input type="email" placeholder=" JohnDoe123@odin.com" />
+            </div>
+            <div class="unit">
+              <label for="phone_number">Phone Number</label
+              ><input
+                type="number"
+                onKeyPress="if(this.value.length==10) return false;"
+                placeholder=" 1234567890"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="unit">
+              <label for="password">Password</label
+              ><input
+                id="password"
+                type="password"
+                placeholder=" 12345678"
+                onkeyup="passConfirm();"
+              />
+            </div>
+            <div class="unit">
+              <label for="password">Confirm Password</label
+              ><input
+                id="confirm"
+                type="password"
+                placeholder=" 12345678"
+                onkeyup="passConfirm();"
+              />
+            </div>
+          </div>
+        </div>
+        <p class="error" id="error"></p>
+        <button onClick="window.location.reload();">Sign Up!</button>
+        <login
+          >Already have an account?
+          <span style="color: #0c844c">Log in</span></login
+        >
+      </box>
+    </div>
+  </body>
+</html>
